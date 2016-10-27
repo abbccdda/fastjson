@@ -7,7 +7,7 @@ install:
   - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
 
 test_script:
-  - mvn test
+  # - mvn test
 after_test:
   - cmd: dir %PYTHON%/Scripts/
   - "%PYTHON%/Scripts/codecov.exe"
