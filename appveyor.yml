@@ -1,6 +1,6 @@
 environment:
-  - PYTHON: "C:\\Python27"
-  
+  PYTHON: "C:\\Python27"
+
 install:
   - cmd: java -version
   - "%PYTHON%/Scripts/pip.exe install --user codecov"
