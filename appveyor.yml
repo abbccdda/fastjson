@@ -9,8 +9,9 @@ install:
 test_script:
   # - mvn test
 after_test:
-  - cmd: dir %PYTHON%/Scripts
-  - "%PYTHON%/Scripts/codecov.exe"
+  - cmd: cd %PYTHON%/Scripts
+  - cmd: dir
+  # - "%PYTHON%/Scripts/codecov.exe"
 
 cache:
   - '%HOMEPATH%\.m2' 
