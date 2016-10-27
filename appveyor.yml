@@ -1,0 +1,13 @@
+install:
+  - cmd: java -version
+  - "%PYTHON%/Scripts/pip.exe install --user codecov"
+  - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+
+test_script:
+  - mvn test
+  - codecov
+
+cache:
+  - '%HOMEPATH%\.m2' 
+
+build: off
