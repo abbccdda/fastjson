@@ -9,7 +9,7 @@ install:
 test_script:
   # - mvn test
 after_test:
-  - cmd: cd %PYTHON%/Scripts
+  # - cmd: cd %PYTHON%/Scripts
   - cmd: dir
   # - "%PYTHON%/Scripts/codecov.exe"
 
